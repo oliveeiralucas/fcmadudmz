@@ -96,3 +96,18 @@ function sendEmail(){
     message => alert(message)
 );
 }
+
+
+// 
+
+var video = document.getElementById("my-video");
+var playButton = document.getElementById("play-btn");
+
+playButton.addEventListener("click", function() {
+  video.play();
+  playButton.style.display = "none";
+});
+
+video.addEventListener("play", function() {
+  playButton.style.display = "none";
+});
